@@ -345,6 +345,7 @@ services:
     volumes:
       - aviation_pgdata:/var/lib/postgresql/data
       - ./docker/init-sql-scripts:/docker-entrypoint-initdb.d
+    restart: always
 
 volumes:
   postgres-db-volume:
